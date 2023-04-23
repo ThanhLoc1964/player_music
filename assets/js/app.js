@@ -259,6 +259,7 @@ const app = {
         }
 
 
+
         volume.onchange = function () {
             audio.volume = Number(volume.value / 100);
         }
@@ -334,6 +335,7 @@ const app = {
         // Display the initial state of the repeat & random button
         randomBtn.classList.toggle('active', this.isRandom);
         repeatBtn.classList.toggle('active', this.isRepeat);
+        volume.value = 100;
         audio.volume = 1;
     }
 
