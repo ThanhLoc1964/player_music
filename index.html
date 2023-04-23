@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Player music</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <div class="player">
+        <!-- Dashboard -->
+        <div class="dashboard">
+            <!-- Header -->
+            <header>
+                <h4>Nhạc của mẻ hay ha bro:</h4>
+                <h2>Tabun たぶん</h2>
+            </header>
+
+            <!-- CD -->
+            <div class="cd">
+                <div class="cd-thumb">
+                </div>
+            </div>
+
+
+            <input type="range" id="progress" class="progress" value="0" min="0" max="100">
+
+            <!-- Control -->
+            <div class="control">
+                <div class="btn btn-repeat">
+                    <i class="fa-solid fa-repeat"></i>
+                </div>
+
+                <div class="btn btn-prev">
+                    <i class="fa-solid fa-backward"></i>
+                </div>
+
+                <div class="btn btn-toggle-play">
+                    <i class="fa-solid fa-pause icon-pause"></i>
+                    <i class="fa-solid fa-play icon-play"></i>
+                </div>
+
+                <div class="btn btn-next">
+                    <i class="fa-solid fa-forward"></i>
+                </div>
+
+                <div class="btn btn-random">
+                    <i class="fa-solid fa-shuffle"></i>
+                </div>
+            </div>
+
+            <div class="volume_section">
+                <i class="fa-solid fa-volume-low icon volume_low"></i>
+                <input id="volume" class="volume" type="range" min="0" max="100" value="0">
+                <i class="fa-solid fa-volume-high icon volume_high"></i>
+            </div>
+
+            <audio id="audio" src=""></audio>
+
+        </div>
+
+
+        <!-- Playlist -->
+        <div class="playlist">
+
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+    <script src="./assets/js/app.js"></script>
+</body>
+
+</html>

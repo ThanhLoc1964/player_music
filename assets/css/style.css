@@ -1,0 +1,234 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+body {
+    background: url('../img/backgroundBody.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: right;
+}
+
+html {
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.player {
+    position: relative;
+    max-width: 480px;
+    margin: 0 auto;
+}
+
+.player .icon-pause {
+    display: none;
+}
+
+.player.playing .icon-pause {
+    display: inline-block;
+}
+
+.player.playing .icon-play {
+    display: none;
+}
+
+.dashboard {
+    padding: 16px 16px 14px;
+    position: fixed;
+    top: 0;
+    max-width: 480px;
+    width: 100%;
+    border-bottom: 1px solid #ebebeb;
+    border-radius: 10px;
+    background: url('../img/backgrdashb.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/* Header */
+header {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+header h4 {
+    color: rgb(8, 226, 8);
+    font-size: 12px;
+}
+
+header h2 {
+    color: aquamarine;
+    font-size: 20px;
+}
+
+
+/* CD */
+.cd {
+    display: flex;
+    margin: auto;
+    width: 200px;
+    margin-bottom: 8px;
+}
+
+.cd-thumb {
+    width: 100%;
+    padding-top: 100%;
+    border-radius: 50%;
+    background-color: #333;
+    background-size: cover;
+    margin: auto;
+    background: url('./assets/img/1_Tabun.jpg');
+}
+
+/* Control */
+.progress {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    background: #fff;
+    height: 8px;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+    border-radius: 10px;
+}
+
+.progress:hover {
+    opacity: 1;
+    /* Fully shown on mouse-over */
+}
+
+.progress::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 12px;
+    height: 12px;
+    background: #333;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.control {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 18px 0 8px 0;
+}
+
+.control .btn {
+    color: rgb(27 89 150);
+    padding: 24px;
+    font-size: 24px;
+}
+
+.control .btn.active {
+    color: aquamarine;
+}
+
+
+/* Volume */
+.volume_section {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.volume_section .icon {
+    padding: 0 12px;
+    font-size: 16px;
+    color: #333;
+}
+
+.volume {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 70%;
+    background: #d3d3d3;
+    height: 8px;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+    border-radius: 10px;
+}
+
+.volume:hover {
+    opacity: 1;
+    /* Fully shown on mouse-over */
+}
+
+.volume::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 18px;
+    height: 18px;
+    background: #333;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+
+
+/* Playlist */
+.playlist {
+    margin-top: 446px;
+    padding: 12px;
+}
+
+.song {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+    background-color: transparent;
+    padding: 8px 16px;
+    border-radius: 5px;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+}
+
+.song.active {
+    background-color: #2d9bb9b5;
+}
+
+.song:active {
+    opacity: 0.8;
+}
+
+.song.active .option,
+.song.active .author,
+.song.active .title {
+    color: #072831b5;
+}
+
+.song .thumb {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-size: cover;
+    margin: 0 8px;
+}
+
+.song .body {
+    flex: 1;
+    padding: 0 16px;
+}
+
+.song .title {
+    font-size: 18px;
+    color: #fff;
+}
+
+.song .author {
+    font-size: 12px;
+    color: #999;
+}
+
+.song .option {
+    padding: 16px 8px;
+    color: #999;
+    font-size: 18px;
+}
